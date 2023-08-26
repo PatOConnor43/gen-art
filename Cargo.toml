@@ -2,4 +2,5 @@
 members = [
     "hv-lines",
     "diag-lines",
+    "cross-diag-lines",
 ]

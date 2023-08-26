@@ -66,6 +66,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "cross-diag-lines"
+version = "0.1.0"
+dependencies = [
+ "image",
+ "rand",
+ "rand_chacha",
+]
+
+[[package]]
 name = "crossbeam-channel"
 version = "0.5.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
