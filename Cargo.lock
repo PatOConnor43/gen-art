@@ -133,6 +133,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "dither"
+version = "0.1.0"
+dependencies = [
+ "image",
+ "itertools",
+ "rand",
+ "rand_chacha",
+]
+
+[[package]]
 name = "either"
 version = "1.9.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -262,6 +272,15 @@ dependencies = [
  "png",
  "qoi",
  "tiff",
+]
+
+[[package]]
+name = "itertools"
+version = "0.11.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b1c173a5686ce8bfa551b3563d0c2170bf24ca44da99c7ca4bfdab5418c3fe57"
+dependencies = [
+ "either",
 ]
 
 [[package]]

@@ -1,6 +1,10 @@
+[profile.release]
+debug = true
+
 [workspace]
 members = [
     "hv-lines",
     "diag-lines",
     "cross-diag-lines",
+    "dither",
 ]
