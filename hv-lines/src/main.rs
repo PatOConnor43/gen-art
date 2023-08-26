@@ -4,6 +4,7 @@ use rand::{Rng, SeedableRng};
 use rand_chacha::ChaCha8Rng;
 
 fn main() -> Result<(), Box<dyn Error>> {
+    let cwd = std::env::current_dir()?;
     let mut r = rand_chacha::ChaCha8Rng::seed_from_u64(1);
     let size = 500;
     let block_offset = 5;
@@ -28,7 +29,8 @@ fn main() -> Result<(), Box<dyn Error>> {
             }
         }
     }
-    img.save("pat.png");
+    let img_path = cwd.join("pat.png");
+    img.save(img_path);
     Ok(())
 }
 
